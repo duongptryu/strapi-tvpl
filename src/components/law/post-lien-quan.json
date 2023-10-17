@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_law_post_lien_quans",
+  "info": {
+    "displayName": "post_lien_quan",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "posts_lien_quan_hieu_luc": {
+      "type": "json"
+    },
+    "posts_lien_quan_noi_dung": {
+      "type": "json"
+    }
+  }
+}

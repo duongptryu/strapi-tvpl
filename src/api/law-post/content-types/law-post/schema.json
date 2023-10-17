@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "law_posts",
+  "info": {
+    "singularName": "law-post",
+    "pluralName": "law-posts",
+    "displayName": "Law post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "luoc_do": {
+      "type": "component",
+      "repeatable": false,
+      "component": "law.luoc-do"
+    },
+    "thuoc_tinh": {
+      "type": "component",
+      "repeatable": false,
+      "component": "law.thuoc-tinh"
+    },
+    "post_lien_quan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "law.post-lien-quan"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "content_en": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "origin_id": {
+      "type": "string",
+      "required": true
+    },
+    "link_source": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "link_download_origin": {
+      "type": "string"
+    },
+    "law_cate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::law-cate.law-cate"
+    }
+  }
+}

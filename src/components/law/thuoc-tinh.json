@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_law_thuoc_tinhs",
+  "info": {
+    "displayName": "thuoc_tinh",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "so_hieu": {
+      "type": "string"
+    },
+    "noi_ban_hanh": {
+      "type": "string"
+    },
+    "ngay_ban_hanh": {
+      "type": "string"
+    },
+    "ngay_cong_bao": {
+      "type": "string"
+    },
+    "loai_van_ban": {
+      "type": "string"
+    },
+    "nguoi_ky": {
+      "type": "string"
+    },
+    "ngay_hieu_luc": {
+      "type": "string"
+    },
+    "so_cong_bao": {
+      "type": "string"
+    },
+    "tinh_trang": {
+      "type": "string"
+    },
+    "linh_vuc": {
+      "type": "string"
+    }
+  }
+}

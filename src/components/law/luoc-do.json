@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_law_luoc_dos",
+  "info": {
+    "displayName": "luoc_do",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "van_ban_duoc_huong_dan": {
+      "type": "json"
+    },
+    "van_ban_bi_sua_doi_bo_sung": {
+      "type": "json"
+    },
+    "van_ban_bi_dinh_chinh": {
+      "type": "json"
+    },
+    "van_ban_bi_thay_the": {
+      "type": "json"
+    },
+    "van_ban_duoc_dan_chieu": {
+      "type": "json"
+    },
+    "van_ban_duoc_can_cu": {
+      "type": "json"
+    },
+    "van_ban_lien_quan_ngon_ngu": {
+      "type": "json"
+    },
+    "van_ban_lien_quan_cung_noi_dung": {
+      "type": "json"
+    },
+    "van_ban_huong_dan": {
+      "type": "json"
+    },
+    "van_ban_hop_nhat": {
+      "type": "json"
+    },
+    "van_ban_sua_doi_bo_sung": {
+      "type": "json"
+    },
+    "van_ban_dinh_chinh": {
+      "type": "json"
+    },
+    "van_ban_thay_the": {
+      "type": "json"
+    },
+    "posts_lien_quan_noi_dung": {
+      "type": "json"
+    }
+  }
+}

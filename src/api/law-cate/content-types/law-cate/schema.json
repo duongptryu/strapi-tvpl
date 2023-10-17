@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "law_cates",
+  "info": {
+    "singularName": "law-cate",
+    "pluralName": "law-cates",
+    "displayName": "Law Cate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "origin_id": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
