@@ -4,7 +4,8 @@
   "info": {
     "singularName": "law-cate",
     "pluralName": "law-cates",
-    "displayName": "Law Cate"
+    "displayName": "Law Cate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,10 @@
       "required": true
     },
     "origin_id": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
       "type": "string",
       "required": true
     }

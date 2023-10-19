@@ -683,6 +683,7 @@ export interface ApiLawCateLawCate extends Schema.CollectionType {
     singularName: 'law-cate';
     pluralName: 'law-cates';
     displayName: 'Law Cate';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -690,6 +691,7 @@ export interface ApiLawCateLawCate extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     origin_id: Attribute.String & Attribute.Required;
+    slug: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
