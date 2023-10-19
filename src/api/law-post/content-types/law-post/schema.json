@@ -65,6 +65,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::law-cate.law-cate"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

@@ -738,6 +738,7 @@ export interface ApiLawPostLawPost extends Schema.CollectionType {
       'oneToOne',
       'api::law-cate.law-cate'
     >;
+    slug: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
