@@ -20,10 +20,38 @@ export default factories.createCoreService(
 
       var keyword = query.keyword;
 
-      let qr = `SELECT id,title FROM law_posts ORDER BY ts_rank(ts, phraseto_tsquery('english', '${keyword}')) DESC OFFSET ${offset} LIMIT ${limit}`;
+      keyword = removeAccents(keyword);
+
+      let qr = `SELECT id,title FROM law_posts WHERE ts @@ phraseto_tsquery('english', '${keyword}') 
+      ORDER BY ts_rank(ts, phraseto_tsquery('english', '${keyword}')) DESC OFFSET ${offset} LIMIT ${limit}`;
       let { rows } = await strapi.db.connection.raw(qr);
-      
+
       return rows;
     },
   })
 );
+
+function removeAccents(str) {
+  var AccentsMap = [
+    "aàảãáạăằẳẵắặâầẩẫấậ",
+    "AÀẢÃÁẠĂẰẲẴẮẶÂẦẨẪẤẬ",
+    "dđ",
+    "DĐ",
+    "eèẻẽéẹêềểễếệ",
+    "EÈẺẼÉẸÊỀỂỄẾỆ",
+    "iìỉĩíị",
+    "IÌỈĨÍỊ",
+    "oòỏõóọôồổỗốộơờởỡớợ",
+    "OÒỎÕÓỌÔỒỔỖỐỘƠỜỞỠỚỢ",
+    "uùủũúụưừửữứự",
+    "UÙỦŨÚỤƯỪỬỮỨỰ",
+    "yỳỷỹýỵ",
+    "YỲỶỸÝỴ",
+  ];
+  for (var i = 0; i < AccentsMap.length; i++) {
+    var re = new RegExp("[" + AccentsMap[i].substr(1) + "]", "g");
+    var char = AccentsMap[i][0];
+    str = str.replace(re, char);
+  }
+  return str;
+}

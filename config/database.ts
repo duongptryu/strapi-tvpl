@@ -73,10 +73,10 @@ export default ({ env }) => {
           ),
         },
         schema: env("DATABASE_SCHEMA", "public"),
-        settings: {
-          runMigrations: false,
-          forceMigration: false,
-        },
+      },
+      settings: {
+        runMigrations: false,
+        forceMigration: false,
       },
       pool: {
         min: env.int("DATABASE_POOL_MIN", 2),
