@@ -22,7 +22,7 @@ export default factories.createCoreService(
 
       keyword = removeAccents(keyword);
 
-      let qr = `SELECT id,title FROM law_posts WHERE ts @@ phraseto_tsquery('english', '${keyword}') 
+      let qr = `SELECT id,title,so_cong_bao,ngay_cong_bao,tinh_trang,updated_at FROM law_posts WHERE ts @@ phraseto_tsquery('english', '${keyword}') 
       ORDER BY ts_rank(ts, phraseto_tsquery('english', '${keyword}')) DESC OFFSET ${offset} LIMIT ${limit}`;
       let { rows } = await strapi.db.connection.raw(qr);
 

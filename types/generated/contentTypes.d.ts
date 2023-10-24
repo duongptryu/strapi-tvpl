@@ -723,7 +723,6 @@ export interface ApiLawPostLawPost extends Schema.CollectionType {
   };
   attributes: {
     luoc_do: Attribute.Component<'law.luoc-do'>;
-    thuoc_tinh: Attribute.Component<'law.thuoc-tinh'>;
     post_lien_quan: Attribute.Component<'law.post-lien-quan'>;
     title: Attribute.String & Attribute.Required;
     content: Attribute.Text & Attribute.Required;
@@ -739,6 +738,16 @@ export interface ApiLawPostLawPost extends Schema.CollectionType {
       'api::law-cate.law-cate'
     >;
     slug: Attribute.String;
+    so_hieu: Attribute.Text;
+    noi_ban_hanh: Attribute.Text;
+    ngay_ban_hanh: Attribute.Text;
+    ngay_cong_bao: Attribute.Text;
+    loai_van_ban: Attribute.Text;
+    nguoi_ky: Attribute.Text;
+    ngay_hieu_luc: Attribute.Text;
+    so_cong_bao: Attribute.Text;
+    tinh_trang: Attribute.Text;
+    linh_vuc: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

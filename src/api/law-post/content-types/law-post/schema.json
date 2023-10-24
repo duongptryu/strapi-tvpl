@@ -17,11 +17,6 @@
       "repeatable": false,
       "component": "law.luoc-do"
     },
-    "thuoc_tinh": {
-      "type": "component",
-      "repeatable": false,
-      "component": "law.thuoc-tinh"
-    },
     "post_lien_quan": {
       "type": "component",
       "repeatable": false,
@@ -68,6 +63,36 @@
     },
     "slug": {
       "type": "string"
+    },
+    "so_hieu": {
+      "type": "text"
+    },
+    "noi_ban_hanh": {
+      "type": "text"
+    },
+    "ngay_ban_hanh": {
+      "type": "text"
+    },
+    "ngay_cong_bao": {
+      "type": "text"
+    },
+    "loai_van_ban": {
+      "type": "text"
+    },
+    "nguoi_ky": {
+      "type": "text"
+    },
+    "ngay_hieu_luc": {
+      "type": "text"
+    },
+    "so_cong_bao": {
+      "type": "text"
+    },
+    "tinh_trang": {
+      "type": "text"
+    },
+    "linh_vuc": {
+      "type": "text"
     }
   }
 }

@@ -37,32 +37,11 @@ export interface LawPostLienQuan extends Schema.Component {
   };
 }
 
-export interface LawThuocTinh extends Schema.Component {
-  collectionName: 'components_law_thuoc_tinhs';
-  info: {
-    displayName: 'thuoc_tinh';
-    icon: 'dashboard';
-  };
-  attributes: {
-    so_hieu: Attribute.String;
-    noi_ban_hanh: Attribute.String;
-    ngay_ban_hanh: Attribute.String;
-    ngay_cong_bao: Attribute.String;
-    loai_van_ban: Attribute.String;
-    nguoi_ky: Attribute.String;
-    ngay_hieu_luc: Attribute.String;
-    so_cong_bao: Attribute.String;
-    tinh_trang: Attribute.String;
-    linh_vuc: Attribute.String;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'law.luoc-do': LawLuocDo;
       'law.post-lien-quan': LawPostLienQuan;
-      'law.thuoc-tinh': LawThuocTinh;
     }
   }
 }
